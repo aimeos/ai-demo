@@ -1,0 +1,22 @@
+{
+	"projectName": "ai-demo",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "ai-demo CSS",
+		"file": "ai-demo.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/admin/jqadm/"
+		}]
+	}, {
+		"name": "ai-demo JS",
+		"file": "ai-demo.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/admin/jqadm/"
+		}]
+	}],
+	"resources" : []
+}
