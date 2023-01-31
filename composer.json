@@ -1,5 +1,5 @@
 {
-	"name": "aimeos-extensions/ai-demo",
+	"name": "aimeos/ai-demo",
 	"description": "Aimeos ai-demo extension",
 	"keywords": ["aimeos", "extension"],
 	"type": "aimeos-extension",
