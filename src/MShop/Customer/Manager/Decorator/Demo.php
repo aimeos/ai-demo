@@ -49,7 +49,7 @@ class Demo
 
         foreach( $customers as $item )
         {
-            if( $item->getId() && ( $exist = $existing->get( $item->getId() ) !== null )
+            if( $item->getId() && ( $exist = $existing->get( $item->getId() ) ) !== null
                 && $item->getPassword() !== $exist->getPassword()
             ) {
                 throw new \Aimeos\Admin\JQAdm\Exception( 'Deleting users is not allowed in demo' );
