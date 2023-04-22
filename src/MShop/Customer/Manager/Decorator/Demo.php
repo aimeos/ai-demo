@@ -28,7 +28,13 @@ class Demo
 	 */
 	public function delete( $items ) : \Aimeos\MShop\Common\Manager\Iface
 	{
-        throw new \Aimeos\Admin\JQAdm\Exception( 'Deleting users is not allowed in demo' );
+		if( PHP_SAPI === 'cli' )
+		{
+			$this->getManager()->delete( $items );
+			return $this;
+		}
+
+		throw new \Aimeos\Admin\JQAdm\Exception( 'Deleting users is not allowed in demo' );
 	}
 
 
